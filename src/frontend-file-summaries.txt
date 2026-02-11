@@ -1,0 +1,21 @@
+{
+  "frontend/src/index.css": "Global styles with charcoal + emerald OKLCH color theme, mobile-safety overflow-x prevention rules, touch-friendly tap highlight colors, and responsive typography.",
+  "frontend/src/App.tsx": "Main app component managing authentication state, view routing (tasks/wallet/admin), profile setup dialog, and setting document title to \"SOJIB YT2.0\".",
+  "frontend/src/components/AppLayout.tsx": "Shared layout wrapper with mobile-first responsive spacing (reduced padding on small screens) providing header, main content container, and footer across all authenticated views.",
+  "frontend/src/components/NavBar.tsx": "Top navigation bar with SOJIB YT2.0 branding, mobile hamburger menu with touch-friendly 44px tap targets, and responsive desktop/mobile navigation patterns.",
+  "frontend/src/components/LoginButton.tsx": "Authentication button component handling Internet Identity login/logout with loading states and query cache clearing.",
+  "frontend/src/components/LandingScreen.tsx": "Signed-out landing page with SOJIB YT2.0 branding, mobile-first responsive layout, hero image, feature highlights (with \"All tasks allowed\" text), and touch-friendly CTAs displaying \"All tasks allowed\" button text.",
+  "frontend/src/components/ProfileSetupDialog.tsx": "Modal dialog prompting new users to enter their name on first login, preventing dismissal until completed.",
+  "frontend/src/components/PointsBalanceCard.tsx": "Reusable card component displaying the current user's points balance with loading and error states.",
+  "frontend/src/components/TasksScreen.tsx": "Main tasks view with mobile-first single-column layout on small screens, touch-friendly 44px minimum button heights, and responsive typography/spacing.",
+  "frontend/src/components/WalletScreen.tsx": "Wallet interface with mobile-optimized forms (44px input heights), ScrollArea wrapper for withdrawal history table to prevent horizontal page overflow on narrow screens.",
+  "frontend/src/components/AdminScreen.tsx": "Admin dashboard with mobile-first form layouts, ScrollArea wrappers for tables to contain overflow, and touch-friendly 40-48px button heights for all actions.",
+  "frontend/src/components/AdminGuard.tsx": "Authorization wrapper checking user role and displaying access denied screen for non-admin users.",
+  "frontend/src/components/AccessDeniedScreen.tsx": "Error screen shown when unauthorized users attempt to access admin-only sections.",
+  "frontend/src/hooks/useRewardsQueries.ts": "React Query hooks for user-facing operations including profile, tasks, points balance, submissions, and withdrawal requests.",
+  "frontend/src/hooks/useAdminQueries.ts": "React Query hooks for admin operations including task creation, submission verification, and withdrawal review (with placeholder queries for missing backend methods).",
+  "frontend/index.html": "HTML entry point with PWA metadata (manifest link, theme-color, apple-mobile-web-app tags) and SOJIB YT2.0 branding in title and meta tags.",
+  "frontend/public/manifest.webmanifest": "Web app manifest for PWA installability with SOJIB YT2.0 branding, standalone display mode, and icon references for Android home screen installation.",
+  "frontend/public/sw.js": "Minimal service worker implementing basic cache-first strategy for core assets to enable PWA install criteria and offline-safe shell caching.",
+  "frontend/src/main.tsx": "Application entry point with React Query and Internet Identity providers, plus service worker registration for PWA support."
+}

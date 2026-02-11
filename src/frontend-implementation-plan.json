@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Landing page copy update to “All tasks allowed”",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Change only the user-selected LandingScreen feature highlight text and the bottom CTA button label to display “All tasks allowed” (keeping “Logging in...” unchanged).",
+      "acceptanceCriteria": [
+        "On the signed-out landing page, the selected bottom CTA button text is changed to exactly: \"All tasks allowed\" (keeping the existing loading text \"Logging in...\").",
+        "On the signed-out landing page, at least one of the selected feature highlight text elements (the selected h3 headings and/or the selected paragraph) is updated so it clearly displays the phrase \"All tasks allowed\" in the visible UI text.",
+        "No non-selected elements outside the provided XPath list are modified as part of this change.",
+        "All user-facing text introduced/changed by this request is in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/LandingScreen.tsx",
+          "operation": "modify",
+          "description": "Update ONLY the user-selected LandingScreen elements (as identified by the provided XPaths): (1) change the bottom CTA Button non-loading label from its current text to exactly \"All tasks allowed\" while preserving the loading label \"Logging in...\"; and (2) update at least one of the selected feature highlight text nodes (h3 and/or its accompanying paragraph) so the visible text clearly includes the phrase \"All tasks allowed\". Do not modify any other copy or elements."
+        }
+      ]
+    }
+  ]
+}

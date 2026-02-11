@@ -1,2 +1,3 @@
-# rewards-app-for-earning-points-by-subscribing-to-a-youtube-channel
-Exported from Caffeine project: Update Landing page copy to say “All tasks allowed” on selected elements
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

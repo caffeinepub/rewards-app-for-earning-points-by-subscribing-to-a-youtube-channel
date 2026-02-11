@@ -1,0 +1,37 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-11T20:29:55.418Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Update only the user-selected elements on the signed-out Landing page (frontend/src/components/LandingScreen.tsx) so the UI displays the phrase “All tasks allowed” in English, by changing the visible text content of the selected feature heading(s)/description and the bottom CTA button.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/LandingScreen.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/LandingScreen.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/LandingScreen.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "build_request",
+  "title": "Update Landing page copy to say “All tasks allowed” on selected elements",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Update only the user-selected elements on the signed-out Landing page (frontend/src/components/LandingScreen.tsx) so the UI displays the phrase “All tasks allowed” in English, by changing the visible text content of the selected feature heading(s)/description and the bottom CTA button.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "all tax allow"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On the signed-out landing page, the selected bottom CTA button text is changed to exactly: \"All tasks allowed\" (keeping the existing loading text \"Logging in...\").",
+        "On the signed-out landing page, at least one of the selected feature highlight text elements (the selected h3 headings and/or the selected paragraph) is updated so it clearly displays the phrase \"All tasks allowed\" in the visible UI text.",
+        "No non-selected elements outside the provided XPath list are modified as part of this change.",
+        "All user-facing text introduced/changed by this request is in English."
+      ]
+    }
+  ],
+  "constraints": [
+    "Apply changes ONLY to the elements identified by the provided XPaths in the user prompt.",
+    "Do not edit files under frontend/src/components/ui or any frontend immutablePaths listed in SYSTEM_CONTEXT."
+  ],
+  "nonGoals": [
+    "Do not change backend logic, task approval rules, or admin permissions.",
+    "Do not modify authentication/login behavior (Internet Identity).",
+    "Do not generate or edit images for this request."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

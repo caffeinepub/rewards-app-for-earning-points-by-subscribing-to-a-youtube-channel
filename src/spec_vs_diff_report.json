@@ -1,0 +1,29 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-11T20:29:55.416Z",
+  "summary": "REQ-1 appears implemented in LandingScreen.tsx by updating one feature heading to “All tasks allowed” and changing the bottom CTA button text to “All tasks allowed” while keeping “Logging in...”. However, the diff also modifies two non-requested files (frontend-file-summaries.txt and project_state.json). The constraint about changing ONLY XPath-selected elements cannot be verified because the provided XPath list is not included in the diff summary.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Modified repository metadata/summary files not requested by the BuildRequest (frontend-file-summaries.txt).",
+      "reason": "BuildRequest only asks for copy updates in frontend/src/components/LandingScreen.tsx and does not request updating summary/metadata files.",
+      "evidence": [
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Modified project tracking/state file (project_state.json) not requested by the BuildRequest.",
+      "reason": "BuildRequest does not mention updating project state metadata; it only requests UI copy changes in LandingScreen.tsx.",
+      "evidence": [
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.66,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/LandingScreen.tsx",
+    "project_state.json"
+  ]
+}
